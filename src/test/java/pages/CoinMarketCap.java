@@ -39,11 +39,6 @@ public class CoinMarketCap extends BaseHelper
         PageFactory.initElements(driver, this);
     }
 
-    private void navigateToCoinMarketCap(String url)
-    {
-        driver.get(url);
-    }
-
     private void closePopUps()
     {
         wdWait.until(ExpectedConditions.presenceOfElementLocated(By.className("cmc-button-plain")));
@@ -76,7 +71,7 @@ public class CoinMarketCap extends BaseHelper
     public void coinMarketCap()
     {
         navigateToCoinMarketCap("https://coinmarketcap.com/");
-        closePopUps();
+        //closePopUps();
         clickOnShowRows();
         clickOnRow50();
         first50Currencies();
