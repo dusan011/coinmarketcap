@@ -12,5 +12,6 @@ public class CoinMarketCapTest extends BaseTest
         coinMarketCap.coinMarketCap();
         Assert.assertTrue("There are no 50 cryptocurrencies in the list after filtering by row", coinMarketCap.numberOfCryptoCurrencies == 50);
         Thread.sleep(5000);
+        System.out.println("test");
     }
 }
